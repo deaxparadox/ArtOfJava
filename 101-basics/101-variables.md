@@ -1,5 +1,12 @@
 # Variables
 
+
+[<<< HOME](../README.md) | [Creating Primitive types](102-creating-primitives-types.md)
+
+----------
+
+
+
 An object stores its state in *fields*.
 
 ```java
@@ -33,3 +40,5 @@ The rules and conventions for naming your variables can be summarized as follows
 - When choosing a name for your variables, use full words instead of cryptic abbreviations.
 - If the name you choose consists of only one word, spell that word in all lowercase letters. If it consists of more than one word, capitalize the first letter of each subsequent word. The names `gearRatio` and `currentGear` are prime examples of this convention. 
 - If your variable stores a constant value, such as static final int `NUM_GEARS = 6`, the convention changes slightly, capitalizing every letter and separating subsequent words with the underscore character. 
+
+[<<< HOME](../README.md) | [Creating Primitive types](102-creating-primitives-types.md)
