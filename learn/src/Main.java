@@ -21,11 +21,20 @@ public class Main {
         // taking_user_input();
         // factorial();
         // swap_values();
-//        Main.swap_values();
+        fibonacci();
 
-        A a = new A();
-        a.add();
+    }
 
+    static void fibonacci() {
+        short num = 43;
+        long value = calculateFibonacci((long) num);
+        System.out.println(value);
+    }
+
+    static long calculateFibonacci(long num) {
+        if (num == 0) { return 0; }
+        if (num == 1) { return 1; }
+        return calculateFibonacci(num-1) + calculateFibonacci(num-2);
     }
 
     static void swap_values() {
