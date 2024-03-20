@@ -54,3 +54,14 @@ class ArrayDemo {
 }
 
 ```
+
+### Declaring a Variable to Refer to an Array
+
+The preceding program declares an array (name `anArray`) with the following line of code
+
+```java
+// declares an array of integers
+int[] anArray;
+```
+
+An array declaration has two component
