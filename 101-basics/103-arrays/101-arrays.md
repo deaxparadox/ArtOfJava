@@ -1,5 +1,10 @@
 # Arrays
 
+
+- [Array](101-arrays.md)
+    - [Creating, Initializing, and Accessing an Array](102-creating-initializing-accessing.md)
+
+
 An *array* is a container object that holds a fixed number of value of a single type. The length of an array is established when the arary is created. After creation, its length is fixed.
 
 
@@ -54,14 +59,3 @@ class ArrayDemo {
 }
 
 ```
-
-### Declaring a Variable to Refer to an Array
-
-The preceding program declares an array (name `anArray`) with the following line of code
-
-```java
-// declares an array of integers
-int[] anArray;
-```
-
-An array declaration has two component
