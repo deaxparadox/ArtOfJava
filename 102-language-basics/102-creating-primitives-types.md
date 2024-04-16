@@ -236,4 +236,4 @@ int x7 = 0x52_;
 
 ```
 
-[Variables](101-variables.md) | [Arrays](103-arrays/101-arrays.md)
+[<<< Variables](101-variables.md) | [Home](../README.md) | [Arrays >>>](103-arrays/101-arrays.md)

@@ -59,3 +59,5 @@ class ArrayDemo {
 }
 
 ```
+
+[<<< Primitive Types](../102-creating-primitives-types.md) | [Home](../../README.md) | [Intializatin and accessing variables](102-creating-initializing-accessing.md)

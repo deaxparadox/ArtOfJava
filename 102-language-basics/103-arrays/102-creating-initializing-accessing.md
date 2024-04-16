@@ -5,6 +5,8 @@
     - [Creating](#creating-initializing-and-accessing-an-array)
     - [Multi Dimensional Array](#multidimensional-array)
     - [Length of Array](#length-of-array)
+    - [Copy Arrays](#copying-arrays)
+    - [Array Manipulation](#array-manipulations)
 
 
 ### Declaring a Variable to Refer to an Array
@@ -137,3 +139,75 @@ Finally, you can use the built-in `length` property to determine the size of any
 ```java
 System.out.println(anArray.length);
 ```
+
+### Copying Arrays
+
+The [System](https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/System.html) class has an [arraycopy()](https://) method that you can use  to efficiently copy data from one array into another:
+
+```java
+public static void arraycopy(Object src, int srcPos,
+                             Object dest, int destPos, int length)
+
+```
+
+The two `Object` arguments specify the array to copy from the array to copy to. The three `int` arguments specify the *starting position in the source array*, the *starting position in the destination array*, and the *number of array elements to copy*.
+
+The following program, `ArrayCopyDemo`, declares an array of `String` elements. It uses the [System.array.copy()](https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/System.html#arraycopy(java.lang.Object,int,java.lang.Object,int,int)) method to coyp a subsequence of array components into a second array:
+
+
+```java
+class ArrayCopyDemo {
+    public static void main(String[] args) {
+        String[] copyFrom = {
+            "Affogato", "Americano", "Cappuccino", "Corretto", "Cortado",
+            "Doppio", "Espresso", "Frappucino", "Freddo", "Lungo", "Macchiato",
+            "Marocchino", "Ristretto" };
+
+        String[] copyTo = new String[7];
+        System.arraycopy(copyFrom, 2, copyTo, 0, 7);
+        for (String coffee : copyTo) {
+            System.out.print(coffee + " ");
+        }
+    }
+}
+
+```
+
+The output from this program is:
+
+```java
+Cappuccino Corretto Cortado Doppio Espresso Frappucino Freddo
+```
+
+
+### Array Manipulations
+
+Arrays are a powerful and useful concept used in programming. Java SE provides methods to perform some of the most common manipulations related to arrays. 
+
+For instance, the `ArrayCopyDemo` example uses the [arraycopy()](https://) method of the [System](https://) class instead of manually iterating through the elements of the source array and placing each one into the destination array. This is performed behind the scenes, enabling the developer to use just one line of code to call the method.
+
+
+For your convenience, Java SE provides several methods for performing array manipulations (common tasks, such as copying, sorting and searching arrays) in the [java.util.Arrays](https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/util/Arrays.html) class.
+
+
+For instance, the previous example can be modified to use the [java.util.Arrays](https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/util/Arrays.html) method of the [java.util.Arrays](https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/util/Arrays.html) class, as you can see in the `ArrayCopyOfDemo` example. The difference is that using the [java.util.Arrays](https://) method does not require you to create the destination array before calling the method, because the destination array is returned by the method:
+
+```java
+class ArrayCopyOfDemo {
+    public static void main(String[] args) {
+        String[] copyFrom = {
+            "Affogato", "Americano", "Cappuccino", "Corretto", "Cortado",
+            "Doppio", "Espresso", "Frappucino", "Freddo", "Lungo", "Macchiato",
+            "Marocchino", "Ristretto" };
+
+        String[] copyTo = java.util.Arrays.copyOfRange(copyFrom, 2, 9);
+        for (String coffee : copyTo) {
+            System.out.print(coffee + " ");
+        }
+    }
+}
+
+```
+
+
+[<<< Array](101-arrays.md) | [Home](../../README.md) | [Intializatin and accessing variables](102-creating-initializing-accessing.md)
