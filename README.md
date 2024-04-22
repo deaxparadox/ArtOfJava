@@ -72,8 +72,9 @@ If the compiler remains silent and does not complain about anything. It means th
 
 Checking the content of the directory again should show a new file in it: `MyFirstClass.class`
 
-[Variables](102-language-basics/101-variables.md)
-[Exceptions](113-exceptions/README.md)
+- [Variables](102-language-basics/101-variables.md)
+- [`var` Keyword](102-language-basics/104-var-type-identifier.md)
+- [Exceptions](113-exceptions/README.md)
 
 Hot Topics:
 - [static keyword](100-topics/101-static.md)

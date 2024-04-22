@@ -1,12 +1,89 @@
 # Arrays
 
 
+- [Array Creation](#array-creation)
+- [Interating over array](#iterating-over-arrays)
+- [Copy Array](#copying-arrays)
+
+
+### Array Creation
+
+
+
+We are going to declare empty *integer* array of of size *10*.
+
+```java
+        // declaring arary
+        int[] nums = new int[10];
+```
+
+Update values, interating over index, and updating values.
+
+```java
+        // updating values
+        for (int i=0; i<10; i++) {
+            nums[i] = i+10;
+        }
+```
+
+Printing array:
+
+```java
+        for (int i: nums) {
+            System.out.println(i);
+        }
+```
+
+Output:
+
+```
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+```
+
+
+We can also initialize an array with values:
+
+```java
+        int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 0};
+```
+
+### Iterating over arrays
+
+Iterating over array using index, this approach requires you to known the size of the array.
+
+```java
+        // iterating over array using index
+        System.out.print("Using index: ");
+        for (int i=0; i<nums.length; i++) {
+            System.out.print(nums[i] + " ");
+        }
+```
+
+Iterating over elements of array.
+
+```java
+        // interating over array using element
+        System.out.print("\nOn element: ");
+        for (int i: nums) {
+            System.out.print(i + " ");
+        }
+
+```
+
+
 ### Copying Arrays
 
 The `System` class has an `ararycopy()` method that you can use to efficiently coyp data from one array another:
 
-
-#### Copy Numbers
 
 For the first example we are going to copy the numbers from one array to another, starting from index `1` for first array `num1` to another array `num2` from starting position `0` for the length of `num2` `5`:
 
@@ -38,9 +115,8 @@ For the first example we are going to copy the numbers from one array to another
     }
 ```
 
-#### Copy Strings
 
-Following above code, we are going to copy string from one array to another:
+In the second example, following above code, we are going to copy string from one array to another:
 
 ```java
 public void copyToAnotherArrayString() {
@@ -69,4 +145,27 @@ public void copyToAnotherArrayString() {
 
     }
 
+```
+
+Java has another builtin method to copy array `copyOfRange(array, start, stop)`, which take source array, range of index you want to copy, it internally creates an array and return the new array:
+
+```java
+public void arrayCopyOfRange() {
+    String[] names = {
+            "Nitish", "Deaxparadox", "Alien-X", "Azmuth", "Ghost Freak", "Vilgax",
+            "Tom", "Jerry", "Spike"
+    };
+
+    String[] newNames = java.util.Arrays.copyOfRange(names, 2, 6);
+    for (String i: newNames) {
+        System.out.println(i);
+    }
+}
+```
+
+```output
+Alien-X
+Azmuth
+Ghost Freak
+Vilgax
 ```

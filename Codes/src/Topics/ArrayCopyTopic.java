@@ -6,10 +6,15 @@ public class ArrayCopyTopic {
     ArrayCopyTopic() {
         System.out.println("Array Copy Constructor");
     }
+
+    static int globalVariable = 1;
+    int localClassVariable = 2;
+
+
     public void copyToAnotherArrayNumber() {
         int size = 5;
 
-        // original array
+                // original array
         int[] name1 = {1, 2 ,3, 4, 5, 6, 7, 8, 9};
         System.out.print("Original Array ");
         for (int num : name1 )  {
@@ -58,9 +63,60 @@ public class ArrayCopyTopic {
 
     }
 
+    public void arrayCopyOfRange() {
+        String[] names = {
+                "Nitish", "Deaxparadox", "Alien-X", "Azmuth", "Ghost Freak", "Vilgax",
+                "Tom", "Jerry", "Spike"
+        };
+
+        String[] newNames = java.util.Arrays.copyOfRange(names, 2, 6);
+        for (String i: newNames) {
+            System.out.println(i);
+        }
+    }
+
+
+    public void array_creation() {
+
+        // declaring arary
+        int[] nums = new int[10];
+
+        // updating values
+        for (int i=0; i<10; i++) {
+            nums[i] = i+10;
+        }
+
+        // printing values
+        for (int i: nums) {
+            System.out.println(i);
+        }
+    }
+
+    public void array_creation_with_values() {
+        int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 0};
+
+
+        // iterating over array using index
+        System.out.print("Using index: ");
+        for (int i=0; i<nums.length; i++) {
+            System.out.print(nums[i] + " ");
+        }
+
+        
+
+        // interating over array using element
+        System.out.print("\nOn element: ");
+        for (int i: nums) {
+            System.out.print(i + " ");
+        }
+    }
+
+
     public static void main(String[] args) {
         ArrayCopyTopic  obj1 = new ArrayCopyTopic();
         // obj1.copyToAnotherArrayNumber();
-        obj1.copyToAnotherArrayString();
+        // obj1.copyToAnotherArrayString();
+        // obj1.array_creation_with_values();
+        obj1.arrayCopyOfRange();
     }
 }
