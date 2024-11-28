@@ -102,7 +102,7 @@ public class ArrayCopyTopic {
             System.out.print(nums[i] + " ");
         }
 
-        
+
 
         // interating over array using element
         System.out.print("\nOn element: ");

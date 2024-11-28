@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fac20db-8a63-4864-ad64-6784b443c4a6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../100-topics/102-arrays.md" beforeDir="false" afterPath="$PROJECT_DIR$/../100-topics/102-arrays.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Topics/ArrayCopyTopic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Topics/ArrayCopyTopic.java" afterDir="false" />
     </list>
@@ -32,19 +31,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ArrayCopyDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ArrayCopyOfDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ArrayCopyTopic.executor&quot;: &quot;Run&quot;,
-    &quot;Application.StaticKeyword.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ArrayCopyDemo.executor": "Run",
+    "Application.ArrayCopyOfDemo.executor": "Run",
+    "Application.ArrayCopyTopic.executor": "Run",
+    "Application.StaticKeyword.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

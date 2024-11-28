@@ -84,3 +84,5 @@ public String greetings(int message) {
 ```
 
 Above code fails because of `rule 3`, `var` type must have the initializer.
+
+[<<< Creating, Initializatin and Accessing an array](103-arrays/102-creating-initializing-accessing.md) | [Home](../README.md) | [Operators in Java](105-java-operators.md)

@@ -210,4 +210,4 @@ class ArrayCopyOfDemo {
 ```
 
 
-[<<< Array](101-arrays.md) | [Home](../../README.md) | [Intializatin and accessing variables](102-creating-initializing-accessing.md)
+[<<< Array](101-arrays.md) | [Home](../../README.md) | [Var Type Identifier](../104-var-type-identifier.md)
